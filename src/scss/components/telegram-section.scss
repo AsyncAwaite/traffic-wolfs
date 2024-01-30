@@ -1,0 +1,218 @@
+.telegram-section {
+  padding-top: gem(100);
+  padding-bottom: gem(50);
+
+  &__info {
+    margin-bottom: gem(16);
+  }
+
+  &__text {
+    margin-bottom: gem(40);
+  }
+
+  &__list {
+    margin-bottom: gem(40);
+    display: flex;
+  }
+
+  .swiper-slide {
+    min-height: gem(300);
+    width: gem(343);
+    padding: gem(24);
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 1px solid var(--1, rgba(207, 220, 240, 0.42));
+    background: var(
+      --1,
+      linear-gradient(
+        116deg,
+        rgba(255, 255, 255, 0.1) 2.37%,
+        rgba(255, 255, 255, 0) 100%
+      )
+    );
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25);
+    transition:
+      scale 0.5s ease,
+      margin-top 0.2s ease;
+  }
+
+  &__list-wrap-top {
+    display: flex;
+    align-items: center;
+    gap: gem(40);
+    margin-bottom: gem(24);
+
+    .big-text {
+      line-height: 100%;
+      display: block;
+      font-size: gem(36);
+      color: var(--accent-elements);
+    }
+  }
+
+  .swiper-wrap {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .diagram-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: gem(132);
+    height: gem(132);
+    border-radius: 30px;
+    border: 1px solid var(--accent-light);
+
+    svg {
+      width: gem(74);
+      height: gem(74);
+    }
+  }
+  
+}
+
+@media screen and (min-width: 577px) {
+  .telegram-section {
+    padding-bottom: gem(50);
+    .swiper{
+      padding-top: gem(11);
+    }
+    .swiper-slide.active {
+      scale: 1.06;
+    }
+
+    &__info {
+      margin: 0;
+      width: gem(473);
+    }
+
+    &__text {
+      line-height: 130%;
+      margin: 0;
+      width: gem(315);
+    }
+
+    &__description {
+      margin-left: gem(400);
+
+      &__wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: gem(32);
+        margin-bottom: gem(42);
+      }
+    }
+
+    .swiper-slide {
+      scale: 0.9;
+      width: gem(400);
+      height: gem(350);
+    }
+
+    &__list-wrap-top {
+      gap: gem(32);
+
+      .big-text {
+        font-size: gem(52);
+      }
+    }
+
+    .diagram-container {
+      width: gem(165) !important;
+      height: gem(165) !important;
+
+      svg {
+        width: gem(100);
+        height: gem(100);
+      }
+    }
+
+    .diagram-text {
+      font-size: gem(20);
+      line-height: 130%;
+    }
+  }
+}
+
+.list-item-centered {
+  position: relative;
+  padding: gem(24);
+
+  .diagram-text {
+    text-align: center;
+    font-size: gem(16);
+    line-height: 130%;
+  }
+  &__container {
+    display: flex;
+    gap: gem(24);
+    justify-content: center;
+    align-items: center;
+
+    &.container-bottom {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__scale {
+    width: gem(300);
+    position: absolute;
+    top: gem(143);
+    img {
+      width: 100%;
+    }
+  }
+
+  .telegram-section__list-wrap-top {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .diagram-container-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: gem(110);
+    height: gem(110);
+    border-radius: 30px;
+    border: 1px solid var(--accent-light);
+
+    svg {
+      width: gem(70);
+      height: gem(70);
+    }
+  }
+
+  .diagram-container-info {
+    height: gem(106);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 577px) {
+    &__scale {
+      width: gem(319);
+      position: absolute;
+      top: gem(160);
+      img {
+        width: 100%;
+      }
+    }
+    .diagram-text {
+      font-size: gem(20);
+    }
+    .diagram-container-second {
+      width: gem(132);
+      height: gem(132);
+
+      svg {
+        width: gem(74);
+        height: gem(74);
+      }
+    }
+  }
+}

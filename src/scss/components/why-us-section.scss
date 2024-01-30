@@ -1,0 +1,233 @@
+.why-us-section {
+  position: relative;
+  padding-top: gem(50);
+  padding-bottom: gem(100);
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: gem(600); 
+    left: gem(-70);
+    width: gem(600);
+    height: gem(600);
+    background-image: url("../../img/ellipse1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    @media screen and (min-width: 577px) {
+      top: gem(300); 
+      left: gem(-100);
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: gem(750); 
+    left: gem(-100);
+    width: gem(600);
+    height: gem(600);
+    z-index: -1;
+    background-image: url("../../img/ellipse2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    @media screen and (min-width: 577px) {
+      top: gem(100); 
+      left: gem(-150);
+    }
+  }
+
+  &__image {
+    position: absolute;
+    z-index: 3;
+    top: gem(20);
+    left: gem(250);
+    width: gem(125);
+    height: gem(160);
+    background-image: url("../../img/why-us-list-image.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
+  }
+
+  &__info {
+    position: relative;
+    z-index: 1;
+    margin-bottom: gem(64);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: gem(48);
+    margin-bottom: gem(50);
+  }
+
+  &__list-item {
+    position: relative;
+    padding-left: gem(32);
+    padding-right: gem(16);
+
+    span {
+      position: absolute;
+      top: gem(-18);
+      left: gem(-22);
+      width: gem(35);
+      height: gem(35);
+
+      svg {
+        width: gem(60);
+        height: gem(60);
+      }
+    }
+  }
+
+  &__list-text-top {
+    font-size: gem(18);
+    text-transform: uppercase;
+    margin-bottom: gem(16);
+  }
+
+  &__channel-wrap {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: gem(18);
+    padding: gem(8) gem(16);
+    top: gem(128);
+    left: gem(-70);
+    width: gem(218);
+    height: gem(79);
+    border-radius: 20px;
+    border: 1px solid var(--1, rgba(207, 220, 240, 0.42));
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      linear-gradient(
+        115deg,
+        rgba(255, 255, 255, 0.16) 3.95%,
+        rgba(255, 255, 255, 0.53) 96.84%
+      );
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+  }
+  &__channel-text-top {
+    font-size: gem(24);
+    font-weight: 600;
+  }
+  &__channel-text-bottom {
+    font-size: gem(20);
+    font-weight: 600;
+  }
+  &__channel-icon {
+    width: gem(63);
+    height: gem(63);
+    .icon-image {
+      width: gem(63);
+      height: gem(63);
+    }
+  }
+  .second {
+    position: absolute;
+    top: gem(265);
+    left: gem(54);
+  }
+
+  &__picture-wrap {
+    position: relative;
+    margin: auto;
+    height: gem(434);
+    width: gem(205);
+    border-radius: 15px;
+    border: 1px solid var(--1, rgba(207, 220, 240, 0.42));
+    background: var(
+      --1,
+      linear-gradient(
+        116deg,
+        rgba(255, 255, 255, 0.1) 2.37%,
+        rgba(255, 255, 255, 0) 100%
+      )
+    );
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+    }
+  }
+
+  @media screen and (min-width: 577px) {
+    .why-us-section__wrap {
+      display: flex;
+      gap: gem(20);
+    }
+
+    &__image {
+      position: absolute;
+      top: gem(250);
+      left: gem(70);
+      width: gem(250);
+      height: gem(350);
+      background-image: url("../../img/icons\ 2.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      z-index: 2;
+    }
+
+    &__info {
+      width: gem(400);
+    }
+
+    &__list {
+      width: gem(400);
+      gap: gem(64);
+    }
+
+    &__list-item {
+      padding-left: gem(56);
+    }
+
+    &__list-text-top {
+      font-size: gem(20);
+    }
+
+    &__picture-wrap {
+      height: gem(498);
+      width: gem(231);
+      margin-top: 0;
+      margin-left: gem(106);
+    }
+
+    &__channel-wrap {
+      top: gem(144);
+      left: gem(-76);
+    }
+    .second {
+      top: gem(288);
+      left: gem(74);
+    }
+
+    .main-text {
+      font-size: gem(18);
+    }
+  }
+}
+
+@keyframes customSwing {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+[data-aos="custom-swing"] {
+  animation: customSwing 1s ease-in-out infinite alternate;
+}

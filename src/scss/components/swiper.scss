@@ -1,0 +1,34 @@
+.swiper-wrap {
+  display: flex;
+  gap: gem(24);
+  margin-bottom: gem(48);
+}
+
+.swiper-btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: gem(40);
+  height: gem(40);
+
+  svg {
+    width: gem(28);
+    height: gem(28);
+    fill: #fff;
+  }
+
+  &:hover {
+    border: 1px solid var(--accent-text);
+    border-radius: 10px;
+
+    svg {
+      fill: var(--accent-text);
+    }
+  }
+
+  &.swiper-button-disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}

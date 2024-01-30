@@ -1,0 +1,128 @@
+.services-section {
+  position: relative;
+  overflow: hidden;
+  height: gem(788.5);
+  padding-top: gem(50);
+  padding-bottom: gem(100);
+  background-image: url("../../img/services-section-background-mob.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  &::before {
+    position: absolute;
+    content: "";
+    top: gem(200); 
+    left: gem(-70);
+    width: gem(600);
+    height: gem(600);
+    background-image: url("../../img/ellipse1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 577px) {
+      top: gem(100); 
+      left: gem(20);
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: gem(250); 
+    left: gem(50);
+    width: gem(600);
+    height: gem(600);
+
+    background-image: url("../../img/ellipse3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    @media screen and (min-width: 577px) {
+      top: gem(100); 
+      left: gem(100);
+    }
+  }
+
+  &__info {
+    position: relative;
+    z-index: 1;
+    margin-bottom: gem(40);
+  }
+  &__list {
+    display: flex;
+    margin-bottom: gem(32);
+    min-width: 0;
+    position: relative;
+  }
+  .swiper-slide {
+    flex: 0 0 auto;
+    width: gem(322);
+    height: gem(189);
+    padding: gem(24) gem(16) gem(32) gem(16);
+    border-radius: 10px;
+    border: 1px solid var(--white);
+    span {
+      color: var(--accent-text);
+      display: block;
+      margin-bottom: gem(8);
+    }
+    p {
+      line-height: 150%;
+      text-transform: uppercase;
+    }
+  }
+  &__text {
+    margin-bottom: gem(32);
+    font-size: gem(18);
+  }
+  .section-header {
+    position: relative;
+    z-index: 1;
+  }
+  .swiper {
+    overflow: visible;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .services-section {
+    .swiper {
+      overflow: hidden;
+    }
+    padding-top: gem(81);
+    height: gem(653);
+    background-image: url("../../img/services-section-background.svg");
+    &__wrap {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      gap: gem(20);
+    }
+
+    &__info {
+      min-width: gem(400);
+    }
+
+    .swiper-wrapper {
+      width: gem(940);
+    }
+    .swiper-slide {
+      width: gem(400) !important;
+      height: gem(218) !important;
+
+      font-size: gem(20);
+    }
+    &__text {
+      width: gem(525);
+    }
+  }
+  .swiper-wrap {
+    margin-bottom: gem(56);
+  }
+  .learn-more-wrap {
+    display: flex;
+    gap: gem(53);
+    .btn {
+      margin: 0;
+    }
+  }
+  
+}

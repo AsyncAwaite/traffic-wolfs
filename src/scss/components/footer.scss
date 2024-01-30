@@ -1,0 +1,185 @@
+.footer {
+  position: relative;
+  padding-bottom: gem(50);
+  padding-top: gem(50);
+  &__background {
+    position: absolute;
+    top: gem(130);
+    left: gem(50);
+    width: gem(285);
+    height: gem(158);
+    transform: rotate(-15deg);
+    flex-shrink: 0;
+    border-radius: 285.452px;
+    background: #3069bf;
+    filter: blur(50px);
+  }
+  &__wrap {
+    position: relative;
+    padding: gem(50) gem(16);
+    background-color: var(--accent);
+    border-radius: 30px;
+  }
+  &__info {
+    position: relative;
+    z-index: 1;
+    width: gem(298);
+    margin-bottom: gem(24);
+  }
+  &__text {
+    position: relative;
+    z-index: 1;
+    font-size: gem(18);
+    margin-bottom: gem(32);
+    color: var(--accent-light);
+  }
+  &__list {
+    
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: gem(24);
+    font-weight: 400;
+    margin-bottom: gem(38);
+  }
+  &__list-item {
+    width: fit-content;
+    position: relative;
+    border-radius: 30px;
+    border: gem(1) solid transparent;
+    transition:
+      border 0.3s ease,
+      box-shadow 0.3s ease;
+
+    &:hover {
+      border: 1px solid #fff;
+      box-shadow:
+        0 0 gem(5) rgba(60, 138, 255, 0.7),
+        0 0 15px rgba(60, 138, 255, 0.7),
+        0 0 20px rgba(60, 138, 255, 0.7),
+        0 0 25px rgba(60, 138, 255, 0.7),
+        0 0 35px rgba(60, 138, 255, 0.7);
+    }
+
+    a {
+      padding: gem(4) gem(16);
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: gem(14);
+    padding: gem(4) gem(16);
+
+    
+  }
+  .btn {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-bottom: gem(125);
+  }
+  .footer__logo {
+    position: relative;
+    z-index: 1;
+    height: gem(117);
+    width: gem(196);
+    margin-bottom: gem(28);
+  }
+  .footer-line {
+    position: absolute;
+    top: gem(460);
+    left: gem(16);
+    z-index: 2;
+    width: gem(343);
+    height: gem(66);
+    background-image: url("../../img/footer-section-line-mob.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .return-btn {
+    border-radius: 50%;
+    position: absolute;
+    bottom: gem(40);
+    right: gem(32);
+    width: gem(40);
+    height: gem(40);
+    border: 1px solid var(--white);
+    cursor: pointer;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+    &:hover {
+      border: none;
+      background-color: var(--accent-elements);
+    }
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .footer {
+    padding-bottom: gem(95);
+    padding-top: gem(75);
+    &__background {
+      bottom: gem(100);
+      left: gem(100);
+      width: gem(359);
+      height: gem(200);
+      border-radius: 359.638px;
+    }
+    &__wrap {
+      padding-top: gem(90);
+      padding-left: gem(85);
+      padding-right: gem(85);
+      padding-bottom: gem(40);
+    }
+    &__text {
+      padding-top: gem(15);
+      width: gem(430);
+      font-size: gem(20);
+      color: var(--white);
+    }
+    &__top-wrap {
+      display: flex;
+      margin-bottom: gem(64);
+      gap: gem(32);
+    }
+    &__info {
+      width: calc(50% - gem(16));
+    }
+    &__connect-wrap {
+      width: calc(50% - gem(16));
+    }
+    &__list {
+      margin: 0;
+      flex-direction: row;
+      gap: gem(16);
+    }
+
+    &__bottom-wrap {
+      display: flex;
+      align-items: center;
+      gap: gem(126);
+      margin-bottom: gem(14);
+    }
+    .btn {
+      width: gem(226);
+      margin: 0;
+    }
+    .footer__logo {
+      margin: 0;
+    }
+    .footer-line {
+      top: gem(310);
+      left: 0;
+      width: gem(1440);
+      background-image: url("../../img/footer-section-line.svg");
+    }
+    .return-btn {
+      bottom: gem(100);
+      right: gem(85);
+    }
+  }
+}

@@ -1,0 +1,205 @@
+.cases-section {
+  position: relative;
+  padding-top: gem(146.5);
+  padding-bottom: gem(100);
+  overflow: hidden;
+  &::before {
+    position: absolute;
+    content: "";
+    top: gem(-10);
+    left: gem(-250);
+    width: gem(800);
+    height: gem(800);
+    background-image: url("../../img/ellipse1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    @media screen and (min-width: 577px) {
+      top: gem(100);
+      left: gem(-100);
+    }
+  }
+
+  .swiper-wrap {
+    margin-bottom: 0;
+  }
+  .active {
+    .cases-section__list-content-wrap {
+      background-image: url("../../img/cases-section-background-active-mob.svg");
+    }
+  }
+  .cases-section__list-item.active .card-icon img {
+    content: url("../img/avatar-active.png");
+  }
+  &__background-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: gem(382.5);
+    height: gem(57);
+    background-image: url("../../img/cases-section-background-line-mob.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__info {
+    position: relative;
+    z-index: 1;
+    margin-bottom: gem(32);
+  }
+  &__list {
+    width: gem(340);
+    display: flex;
+    margin-bottom: gem(40);
+  }
+  &__list-item {
+    height: gem(416) !important;
+    width: gem(343) !important;
+    position: relative;
+  }
+  &__list-content-wrap {
+    background-image: url("../../img/cases-section-background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    height: 100%;
+    width: gem(292);
+    padding-top: gem(24.5);
+    padding-bottom: gem(24.5);
+    padding-right: gem(16);
+    padding-left: gem(63);
+    .inner-top-wrap {
+      width: gem(212);
+      padding-bottom: gem(16);
+      display: flex;
+      flex-direction: column;
+      gap: gem(4);
+      margin-bottom: gem(41);
+      border-bottom: 1px solid var(--accent-elements);
+    }
+    .inner-wrap {
+      display: flex;
+      gap: gem(2);
+      flex-direction: column;
+      gap: gem(24);
+    }
+    button {
+      position: absolute;
+      bottom: gem(40);
+      right: gem(40);
+      width: gem(35);
+      height: gem(35);
+      svg {
+        width: gem(60);
+        height: gem(60);
+      }
+    }
+  }
+  &__text {
+    line-height: 150%;
+    margin-bottom: gem(32);
+    color: var(--accent-light);
+    font-size: gem(18);
+  }
+  .swiper-wrap {
+    justify-content: center;
+  }
+}
+
+.top-text {
+  font-size: gem(20);
+}
+
+.card-icon {
+  width: gem(100);
+  height: gem(100);
+  border-radius: 50%;
+  border: 1px solid white;
+  position: absolute;
+  top: gem(24.5);
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .cases-section {
+    padding-top: gem(130.5);
+    .active {
+      .cases-section__list-content-wrap {
+        background-image: url("../../img/cases-section-background-active.svg");
+      }
+    }
+    &__list {
+      gap: gem(16);
+    }
+    &__background-line {
+      width: gem(1627.5);
+      height: gem(57);
+      background-image: url("../../img/cases-section-background-line.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    &__list-item {
+      height: gem(453) !important;
+      width: gem(400) !important;
+    }
+    &__list-content-wrap {
+      width: gem(335);
+      background-image: url("../../img/cases-section-background.svg");
+      filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
+      .inner-top-wrap {
+        width: gem(241);
+        padding-bottom: gem(24);
+        margin-bottom: gem(16);
+      }
+    }
+
+    .top-text {
+      line-height: 130%;
+      font-size: gem(32);
+    }
+    .list-top-text {
+      font-size: gem(24);
+    }
+  }
+  .card-icon {
+    width: gem(120);
+    height: gem(120);
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.cases-section__list-item.active {
+  > .cases-section__list-content-wrap::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #225196;
+    animation: fadeInOut 0.5s ease forwards;
+  }
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

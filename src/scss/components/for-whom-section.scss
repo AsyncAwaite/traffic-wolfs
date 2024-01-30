@@ -1,0 +1,144 @@
+.for-whom-section {
+  position: relative;
+  padding-top: gem(100);
+  padding-bottom: gem(100);
+  &::before {
+    position: absolute;
+    content: "";
+    top: gem(300); 
+    left: gem(50);
+    width: gem(600);
+    height: gem(600);
+    background-image: url("../../img/ellipse1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    @media screen and (min-width: 577px) {
+      top: gem(300); 
+      left: gem(850);
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: gem(250); 
+    left: gem(50);
+    width: gem(600);
+    height: gem(600);
+    z-index: -1;
+    background-image: url("../../img/ellipse2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    @media screen and (min-width: 577px) {
+      top: gem(300); 
+      left: gem(850);
+    }
+  }
+  &__image {
+    margin-right: gem(-100); 
+    flex-shrink: 0;
+    position: sticky;
+    top: gem(300);
+    width: gem(120);
+    height: gem(120);
+    background-image: url("../../img/for-whom-section-icon.svg");
+    background-size: 140%;
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
+  
+
+  &__info {
+    margin-bottom: gem(32);
+  }
+
+  &__list {
+    > *:not(:last-child) {
+      margin-bottom: gem(16);
+    }
+  }
+
+  &__list-item {
+    height: gem(212);
+    width: gem(256);
+    margin-left: auto;
+    padding-left: gem(16);
+    padding-right: gem(16);
+    padding-top: gem(24);
+
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.15);
+    background-image: url("../../img/for-whom-section-background.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: gem(12);
+      margin-bottom: gem(12);
+    }
+
+    h4 {
+      width: gem(164);
+    }
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: gem(48);
+      height: gem(48);
+      border-radius: 50%;
+      background-color: var(--accent-elements);
+
+      svg {
+        width: gem(32);
+        height: gem(32);
+      }
+    }
+    
+  }
+
+  @media screen and (min-width: 577px) {
+    .for-whom-section {
+      .list-wrap{
+        width: gem(818);
+        display: flex;
+      }
+      
+      &__image {
+        margin: 0; 
+        position: absolute;
+        top: gem(430);
+        left: gem(26);
+        width: gem(250);
+        height: gem(250);
+        background-size: contain;
+        background-position: center;
+      }
+      &__wrap {
+        display: flex;
+        gap: gem(40);
+      }
+
+      &__list {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: gem(25);
+        row-gap: gem(32.5);
+      }
+
+      &__list-item {
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+
+.list-wrap{
+  display: flex;
+  justify-content: space-between;
+}

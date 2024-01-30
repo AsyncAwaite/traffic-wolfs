@@ -1,0 +1,117 @@
+.about-section {
+  position: relative;
+  height: gem(1448);
+  padding-top: gem(48.5);
+  padding-bottom: gem(16);
+  background-image: url("../../img/about-section-background-mob.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: gem(500); 
+    left: 0;
+    width: gem(400);
+    height: gem(500);
+    background-image: url("../../img/ellipse3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__info {
+    position: relative;
+    z-index: 1;
+    margin-bottom: gem(44);
+    line-height: 130%;
+    opacity: 0;
+    color: transparent;
+  }
+
+  &__list {
+    counter-reset: listItemCounter;
+    &-item {
+      min-height: gem(242);
+      border: gem(1) solid var(--accent-text);
+      padding-top: gem(24);
+      padding-bottom: gem(24);
+      padding-left: gem(57);
+      padding-right: gem(35);
+
+      h4 {
+        margin-bottom: gem(8);
+        position: relative;
+        &:before {
+          counter-increment: listItemCounter;
+          content: "0" counter(listItemCounter);
+          position: absolute;
+          left: gem(-35);
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .about-section__list-item:last-child {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+}
+.about-section__info.animate {
+  opacity: 1;
+  color: #fff;
+}
+@media screen and (min-width: 577px) {
+  .about-section {
+    height: gem(694);
+    background-image: none;
+    background-size: initial;
+    background-repeat: initial;
+    &::before {
+      top: gem(200); 
+      left: 0;
+      width: gem(600);
+      height: gem(600);
+    }
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      padding-top: gem(75);
+      width: gem(1240);
+
+      border-radius: gem(10);
+      background-image: url("../../img/about-section-background.svg");
+      background-size: gem(1240) gem(694);
+      background-repeat: no-repeat;
+    }
+
+    &__info-wrap {
+      padding-left: gem(180);
+      padding-right: gem(50);
+      margin-bottom: gem(40);
+    }
+
+    &__info {
+      margin: 0;
+      line-height: 130%;
+    }
+
+    &__list {
+      margin-left: gem(2);
+      margin-top: auto;
+      display: flex;
+    }
+
+    &__list-item {
+      width: gem(412);
+      &:first-child {
+        border-bottom-left-radius: 10px;
+      }
+      &:last-child {
+        border-bottom-right-radius: 10px;
+      }
+    }
+  }
+}

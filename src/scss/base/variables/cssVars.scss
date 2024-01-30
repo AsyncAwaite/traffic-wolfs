@@ -1,0 +1,39 @@
+@import "typography";
+@import "colors";
+// :root {
+//   --header-height: #{gem(117)};
+//   --header-height-decrement: #{gem(-117)};
+//   --container-gap: #{gem(54)};
+//   --container-gap-decrement: #{gem(-54)};
+//   --section-padding: #{gem(70)};
+//   --section-padding-decrement: #{gem(-70)};
+//   @media all and (max-width: 992px) {
+//     --section-padding: #{gem(50)};
+//     --section-padding-decrement: #{gem(-50)};
+//   }
+//   @media all and (max-width: 576px) {
+//     --container-gap: #{gem(16)};
+//     --container-gap-decrement: #{gem(-16)};
+//   }
+// }
+
+:root {
+  --container-gap: #{gem(16)};
+  --container-gap-decrement: #{gem(-16)};
+
+  @media all and (min-width: 577px) {
+    --container-gap: #{gem(100)};
+    --container-gap-decrement: #{gem(-100)};
+    --section-padding: #{gem(50)};
+    --section-padding-decrement: #{gem(-50)};
+  }
+
+  @media all and (min-width: 993px) {
+    --header-height: #{gem(117)};
+    --header-height-decrement: #{gem(-117)};
+    --section-padding: #{gem(70)};
+    --section-padding-decrement: #{gem(-70)};
+    --container-gap: #{gem(100)};
+    --container-gap-decrement: #{gem(-100)};
+  }
+}

@@ -1,0 +1,12 @@
+
+
+.page {
+  padding-top: calc(var(--header-height) + .28rem);
+  padding-bottom: 1.3rem;
+  @media all and (max-width: 576px) {
+    padding-top: calc(var(--header-height) + .24rem);
+    padding-bottom: .48rem;
+  }
+}
+
+

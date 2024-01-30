@@ -1,0 +1,22 @@
+// !gradient for text
+@mixin textGradient($gradient) {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+// !:not (last-child)
+@mixin notLast() {
+  &:not(:last-child) {
+    @content;
+  }
+}
+
+// !:not (first-child)
+@mixin notFirst() {
+  &:not(:first-child) {
+    @content;
+  }
+}
+

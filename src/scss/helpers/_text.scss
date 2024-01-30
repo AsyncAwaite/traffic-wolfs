@@ -1,0 +1,42 @@
+.text {
+  &-uppercase {
+    text-transform: uppercase;
+  }
+
+  &-underline {
+    text-decoration: underline;
+  }
+
+
+  &-center {
+    text-align: center;
+
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-color {
+    &_white {
+      color: var(--white);
+    }
+
+    &_accent {
+      color: var(--accent);
+    }
+
+    &_grey {
+      color: var(--grey);
+    }
+
+    &_black {
+      color: var(--black);
+    }
+
+
+  }
+
+}
+
+

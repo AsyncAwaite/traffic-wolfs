@@ -1,0 +1,63 @@
+.connect-section {
+  position: relative;
+  padding-top: gem(100);
+  padding-bottom: gem(100);
+
+  &__info {
+    letter-spacing: normal;
+    color: var(--accent);
+    line-height: 150%;
+    margin-bottom: gem(32);
+  }
+
+  .first-text {
+    margin-left: gem(45);
+  }
+  .second-text {
+    display: block;
+    text-align: right;
+  }
+
+  &__background-line {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: gem(375);
+    height: gem(64);
+    background-image: url("../../img/connect-section-background-line-mob.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .connect-section {
+    .first-text {
+      margin-left: gem(77);
+    }
+    padding-top: gem(139);
+    &__info-wrap {
+      width: gem(1025);
+      margin: auto;
+    }
+    &__info {
+      margin: 0;
+      margin-bottom: gem(53);
+    }
+    &__background-line {
+      width: gem(1440);
+      height: gem(66);
+      background-image: url("../../img/connect-section-background-line.svg");
+    }
+  }
+}
+
+.connect-section__info .first-text.animate span {
+  color: var(--white);
+  transition: color 0.3s ease-in-out;
+}
+
+.connect-section__info .second-text.animate span {
+  color: var(--white);
+  transition: color 0.3s ease-in-out;
+}

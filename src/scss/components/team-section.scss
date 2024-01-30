@@ -1,0 +1,126 @@
+.team-section {
+  position: relative;
+  padding-bottom: gem(30);
+  &::before {
+    position: absolute;
+    content: "";
+    top: gem(350); 
+    left: gem(-70);
+    width: gem(600);
+    height: gem(600);
+    background-image: url("../../img/ellipse1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    @media screen and (min-width: 577px) {
+      width: gem(700);
+      height: gem(600);
+      top: gem(150); 
+      left: gem(380);
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: gem(-30); 
+    left: gem(-100);
+    width: gem(600);
+    height: gem(600);
+    z-index: -1;
+    background-image: url("../../img/ellipse2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    @media screen and (min-width: 577px) {
+      top: gem(-100); 
+      left: gem(-120);
+    }
+  }
+  &__info {
+    position: relative;
+    z-index: 1;
+    margin-bottom: gem(32);
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: gem(12);
+    margin-bottom: gem(40);
+  }
+  &__list-item {
+    position: relative;
+    background-color: var(--accent);
+    width: gem(340);
+    height: gem(143);
+    padding: gem(24) gem(16);
+    border-radius: 15px;
+    &__line {
+      width: gem(340);
+      height: gem(100);
+      position: absolute;
+      top: gem(0);
+      left: 0;
+      svg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+      }
+    }
+    .card-icon {
+      position: absolute;
+      right: gem(16);
+      width: gem(100);
+      height: gem(100);
+      border-radius: 50%;
+      border: none;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+      }
+    }
+  }
+
+  &__list-text-wrap {
+    width: gem(204);
+    display: flex;
+    flex-direction: column;
+    gap: gem(20);
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .team-section {
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: gem(20);
+    }
+    &__list-item {
+      width: gem(400);
+      height: gem(160);
+      padding: gem(30) gem(24);
+      &__line {
+        width: gem(400);
+        height: gem(100);
+        top: gem(12);
+        left: 0;
+      }
+      .card-icon {
+        width: gem(120);
+        height: gem(120);
+      }
+    }
+    &__card-line {
+      top: gem(-50);
+    }
+    &__list-text-wrap {
+      width: gem(223);
+
+      gap: gem(28);
+    }
+  }
+}

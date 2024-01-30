@@ -1,0 +1,62 @@
+
+:root {
+  --font-size-h1: #{gem(36)};
+  --font-size-h2: #{gem(32)};
+  --font-size-h4: #{gem(18)};
+  --body-size: #{gem(16)};
+  --txt-l: #{gem(18)};
+  --txt-m: #{gem(16)};
+  --txt-s: #{gem(14)};
+  --btn: #{gem(16)};
+  --btn-l: #{gem(18)};
+
+  @media all and (min-width: 576px) {
+    --font-size-h1: #{gem(52)};
+    --font-size-h2: #{gem(40)};
+    --txt-l: #{gem(20)};
+    --body-size: #{gem(16)};
+  }
+  
+  @media all and (min-width: 992px) {
+    --txt-l: #{gem(20)};
+    --font-size-h1: #{gem(52)};
+    --font-size-h2: #{gem(40)};
+    --font-size-h3: #{gem(32)};
+    --font-size-h4: #{gem(20)};
+  }
+
+
+
+  //LINE-HEIGHT
+  //--line-height-h1: #{gem(60)};
+  //--line-height-h2: #{gem(50)};
+  //--line-height-h3: #{gem(42)};
+  //--line-height-h4: #{gem(34)};
+  //--line-height-h5: #{gem(32)};
+
+  // --body-line: 150%;
+  //--txt-line-lg: #{gem(24)};
+  //--txt-line-m: #{gem(16)};
+  //--txt-line-s: 120%;
+
+
+  //@media all and (max-width: 992px) {
+  //  --line-height-h1: #{gem(68)};
+  //  --line-height-h2: #{gem(48)};
+  //  --line-height-h3: #{gem(36)};
+  //  --line-height-h4: #{gem(38)};
+  //
+  //}
+  //@media all and (max-width: 576px) {
+  //  --line-height-h1: #{gem(56)};
+  //  --line-height-h2: #{gem(52)};
+    //--line-height-h3: #{gem(34)};
+    //--line-height-h4: #{gem(22)};
+    //
+    //--body-line-height: #{gem(22.5)};
+    //--body-line-l: #{gem(22.5)};
+    //
+    //
+    //--body-line-xs: #{gem(18)};
+  //}
+}

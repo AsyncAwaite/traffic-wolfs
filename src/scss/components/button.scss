@@ -1,0 +1,49 @@
+.btn {
+  display: flex;
+  width: gem(242);
+  height: gem(54);
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  border-radius: 10px;
+  font-size: gem(16);
+  background: #3C8AFF;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition:
+    box-shadow 0.5s ease,
+    background 1s ease,
+}
+
+.btn:hover {
+  background: radial-gradient(circle at center, rgba(60, 138, 255, 0.8) 0%, rgba(24, 72, 146, 0.8) 100%);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.load-more-btn {
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  display: block;
+  padding: gem(16) gem(8);
+
+  margin: auto;
+  color: var(--accent-light);
+  border-bottom: 2px solid var(--accent-light);
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-top: 2px solid transparent;
+  transition: all 0.3s ease;
+  &:hover,
+  &:focus {
+    padding: gem(16) gem(24);
+    border-radius: 10px;
+    border-right: 2px solid var(--accent-light);
+    border-left: 2px solid var(--accent-light);
+    border-top: 2px solid var(--accent-light);
+  }
+}
+
+

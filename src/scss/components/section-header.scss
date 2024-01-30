@@ -1,0 +1,12 @@
+.section-header {
+  font-size: gem(18);
+  font-weight: 400;
+  color: var(--accent-text);
+  margin-bottom: gem(32);
+}
+
+@media screen and (min-width: 577px) {
+  .section-header {
+    font-size: gem(20);
+  }
+}

@@ -1,0 +1,120 @@
+.connect-section-bottom {
+  position: relative;
+  height: gem(711);
+  padding-top: gem(187);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../img/connect-section-background-mob.png");
+  &::before {
+    position: absolute;
+    content: "";
+    top: gem(100); 
+    left: gem(-70);
+    width: gem(600);
+    height: gem(600);
+    background-image: url("../../img/ellipse1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    @media screen and (min-width: 577px) {
+      top: gem(150); 
+      left: gem(120);
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: gem(50); 
+    left: gem(-200);
+    width: gem(600);
+    height: gem(600);
+    z-index: -1;
+    background-image: url("../../img/ellipse2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    @media screen and (min-width: 577px) {
+      top: gem(-10); 
+      left: gem(50);
+    }
+  }
+  &__background-line {
+    position: absolute;
+    top: gem(35);
+    left: 0;
+    z-index: 2;
+    width: gem(1440);
+    height: gem(66);
+    background-image: url("../../img/connect-section-bottom-background-line-mob.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+  &__info {
+    color: var(--accent);
+    line-height: 150%;
+    position: relative;
+    z-index: 1;
+    .lines {
+      position: relative;
+      margin-left: gem(44);
+    }
+    .bottom-text {
+      display: block;
+      margin-left: gem(44);
+    }
+    margin-bottom: gem(40);
+  }
+}
+@media screen and (min-width: 577px) {
+  .connect-section-bottom {
+    padding-top: 0;
+    height: gem(640);
+    background-image: none;
+    background-size: initial;
+    background-repeat: initial;
+
+    &__background-line {
+      top: gem(40);
+      background-image: url("../../img/connect-section-bottom-background-line.svg");
+    }
+    .inner-wrap {
+      width: gem(823);
+    }
+    &__wrap {
+      padding-top: gem(175);
+      padding-left: gem(210);
+      padding-right: gem(205);
+
+      height: gem(640);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url("../../img/connect-section-background.png");
+    }
+    &__info {
+      .lines {
+        margin-left: gem(55);
+      }
+      .bottom-text {
+        display: inline-block;
+        margin-left: gem(237);
+        text-align: right;
+      }
+    }
+    &__info-second {
+      margin-bottom: gem(53);
+      margin-left: gem(244);
+    }
+  }
+}
+
+.connect-section-bottom__info .lines.animate span {
+  color: var(--white);
+  transition: color 0.3s ease-in-out;
+}
+
+.connect-section-bottom__info .bottom-text.animate span {
+  color: var(--white);
+  transition: color 0.3s ease-in-out;
+}

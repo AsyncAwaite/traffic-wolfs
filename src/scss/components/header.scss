@@ -1,0 +1,267 @@
+.header {
+  &-hidden {
+    transform: translateY(-100%);
+  }
+
+  position: fixed;
+  height: var(--header-height);
+  padding-top: gem(10);
+  padding-bottom: gem(10);
+  font-weight: 400;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: gem(18);
+  background: linear-gradient(
+    to top,
+    rgba(34, 43, 56, 0.8),
+    rgba(34, 43, 56, 1)
+  );
+  z-index: 1000;
+  transition: transform 0.3s linear;
+
+  &__container {
+    max-width: gem(1240);
+    padding-left: gem(15);
+    padding-right: gem(15);
+  }
+
+  &__wrap {
+    position: relative;
+    z-index: 1000;
+  }
+
+  &__logo {
+    position: relative;
+    left: gem(-14);
+    z-index: 50;
+    width: gem(180);
+    height: gem(80);
+  }
+
+  &__menu {
+    opacity: 0;
+    z-index: 1;
+    border-radius: 20px 0px 0px 20px;
+    width: gem(365);
+    height: gem(661);
+    background-color: var(--accent);
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: gem(56);
+    transform: translateX(100%);
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+    animation-duration: 0.3s;
+
+    &.initial-hide {
+      visibility: hidden;
+    }
+  }
+
+  &__background-line {
+    position: absolute;
+    bottom: gem(28);
+    left: 0;
+    z-index: 2;
+    width: gem(370);
+    height: gem(71);
+    background-image: url("../../img/footer-section-line-mob.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: gem(20);
+  }
+}
+
+.header__menu.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.menu {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: gem(32);
+  }
+
+  &__item {
+    position: relative;
+    border-radius: 30px;
+    border: gem(1) solid transparent;
+    transition:
+      border 0.3s ease,
+      box-shadow 0.3s ease;
+
+    &:hover {
+      border: 1px solid #fff;
+      box-shadow:
+        0 0 gem(5) rgba(60, 138, 255, 0.7),
+        0 0 15px rgba(60, 138, 255, 0.7),
+        0 0 20px rgba(60, 138, 255, 0.7),
+        0 0 25px rgba(60, 138, 255, 0.7),
+        0 0 35px rgba(60, 138, 255, 0.7);
+    }
+
+    a {
+      padding: gem(4) gem(16);
+    }
+  }
+}
+
+.actions {
+  &__telegram-icon {
+    height: gem(50);
+    width: gem(50);
+  }
+}
+
+.burger-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: gem(23);
+  left: gem(302);
+  z-index: 2;
+  width: gem(40);
+  height: gem(40);
+  border: 1px solid;
+  border-radius: 50%;
+
+  @media screen and (min-width: 577px) {
+    display: none;
+  }
+}
+
+.burger-btn.active {
+  display: none;
+}
+
+.burger-close-btn {
+  display: none;
+  position: absolute;
+  top: gem(23);
+  left: gem(302);
+  z-index: 2;
+  width: gem(40);
+  height: gem(40);
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.burger-close-btn.visible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger {
+  width: gem(24);
+  height: gem(24);
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 577px) {
+  .header {
+    padding-top: gem(17);
+    padding-bottom: gem(17);
+
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__menu {
+      opacity: 1;
+      visibility: visible;
+      display: flex;
+      width: inherit;
+      height: inherit;
+      background-color: inherit;
+      position: static;
+      flex-direction: row;
+      transform: none;
+
+      &.initial-hide {
+        visibility: visible;
+      }
+    }
+
+    &__background-line {
+      display: none;
+    }
+
+    &__actions {
+      flex-direction: row;
+    }
+  }
+  .menu {
+    &__list {
+      display: flex;
+      gap: gem(16);
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__item {
+      &:hover {
+        .link-background {
+          display: block;
+        }
+      }
+    }
+
+    .link-background {
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(49.428deg);
+      transition: transform 0.5s ease;
+    }
+
+    .burger-close-btn {
+      display: none;
+    }
+  }
+  .actions {
+    &__telegram-icon {
+      height: gem(40);
+      width: gem(40);
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(34, 43, 56, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}

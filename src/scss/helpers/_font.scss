@@ -1,0 +1,60 @@
+.f {
+&-family{
+  &_main{
+    font-family: CeraPro, sans-serif, system-ui;
+  }
+}
+  &-weight {
+
+    &_400 {
+      font-weight: 400 !important;
+    }
+
+    &_500 {
+      font-weight: 500 !important;
+    }
+
+
+
+
+  }
+
+  &-size {
+    &_l {
+      font-size: var(--txt-l);
+    }
+
+    &_m {
+      font-size: var(--txt-m);
+
+    }
+
+    &_s {
+      font-size: var(--txt-s);
+
+
+    }
+
+
+    &_18-16 {
+      font-size: .18rem;
+      @media (max-width: 576px) {
+        font-size: .16rem;
+      }
+    }
+    &_l-s {
+      font-size: var(--txt-l);
+      @media (max-width: 576px) {
+        font-size: var(--txt-s);
+      }
+    }
+
+    &_m-s {
+      font-size: var(--txt-m);
+      @media (max-width: 576px) {
+        font-size: var(--txt-s);
+      }
+    }
+  }
+
+}
