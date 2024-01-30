@@ -1,6 +1,8 @@
 // Увімкнути/вимкнути FLS (Full Logging System) (в роботі)
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LazyLoad from "vanilla-lazyload";
+
 
 import burger from "./modules/burger.js";
 import animateAboutSection from "./modules/animateAboutSection.js";
@@ -67,6 +69,7 @@ window.addEventListener("load", () => {
     initTelegramSlider();
     burger();
     initLoadMore();
+    lazyLoadInstance.update();
   } catch (e) {
     console.log(e);
   }
@@ -105,3 +108,8 @@ function headerFixed() {
     });
   }
 }
+
+
+const lazyLoadInstance = new LazyLoad({
+  elements_selector: ".lazy",
+});

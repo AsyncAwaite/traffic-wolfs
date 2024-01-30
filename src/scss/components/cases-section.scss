@@ -30,6 +30,10 @@
   }
   .cases-section__list-item.active .card-icon img {
     content: url("../img/avatar-active.png");
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
   }
   &__background-line {
     position: absolute;

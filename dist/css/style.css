@@ -3436,6 +3436,11 @@ h5,
 
 .cases-section .cases-section__list-item.active .card-icon img {
   content: url("../img/avatar-active.png");
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
 }
 
 .cases-section__background-line {
@@ -5670,6 +5675,10 @@ h1 h2 h3 h4 h5 h6 {
   .connect-section-bottom::after {
     top: -0.1rem;
     left: 0.5rem;
+  }
+
+  .webp .connect-section-bottom {
+    background-image: none;
   }
 
   .connect-section-bottom {

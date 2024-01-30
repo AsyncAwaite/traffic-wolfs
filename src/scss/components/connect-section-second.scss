@@ -67,13 +67,15 @@
   }
 }
 @media screen and (min-width: 577px) {
+  .webp .connect-section-bottom {
+    background-image: none;
+  }
   .connect-section-bottom {
     padding-top: 0;
     height: gem(640);
     background-image: none;
     background-size: initial;
     background-repeat: initial;
-
     &__background-line {
       top: gem(40);
       background-image: url("../../img/connect-section-bottom-background-line.svg");

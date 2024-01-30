@@ -522,6 +522,24 @@
             observer.observe(infoElement);
         };
         const modules_animateAboutSection = animateAboutSection;
+        document.documentElement;
+        const elementsNodeList_body = document.body;
+        const elementsNodeList_header = document.querySelector("header");
+        function getElement(selector, element = document) {
+            return element.querySelector(selector);
+        }
+        function getElements(selector, element = document) {
+            return element.querySelectorAll(selector);
+        }
+        function enableScrollAndSwipes(scrollPosition) {
+            elementsNodeList_body.style.position = "relative";
+            elementsNodeList_body.style.top = "0";
+            elementsNodeList_body.classList.remove("fixed");
+            window.scrollTo({
+                top: +scrollPosition,
+                behavior: "auto"
+            });
+        }
         const animateSpan = async span => {
             const words = span.textContent.split(" ");
             span.innerHTML = "";
@@ -546,13 +564,8 @@
                 observer.observe(span);
             }));
         };
-        const animateConnectSectionBottom = async () => {
-            const infoElement = document.querySelector(".connect-section-bottom__info");
-            const spans = infoElement.querySelectorAll("span");
-            for (const span of spans) await animateSpan(span);
-        };
-        const animateConnectSection = async () => {
-            const infoElement = document.querySelector(".connect-section__info");
+        const animateTextSection = async selector => {
+            const infoElement = getElement(selector);
             const spans = infoElement.querySelectorAll("span");
             for (const span of spans) await animateSpan(span);
         };
@@ -626,24 +639,6 @@
                 fixHeight();
             }
         }
-        function getElement(selector, element = document) {
-            return element.querySelector(selector);
-        }
-        function getElements(selector, element = document) {
-            return element.querySelectorAll(selector);
-        }
-        function enableScrollAndSwipes(scrollPosition) {
-            elementsNodeList_body.style.position = "relative";
-            elementsNodeList_body.style.top = "0";
-            elementsNodeList_body.classList.remove("fixed");
-            window.scrollTo({
-                top: +scrollPosition,
-                behavior: "auto"
-            });
-        }
-        document.documentElement;
-        const elementsNodeList_body = document.body;
-        const elementsNodeList_header = document.querySelector("header");
         location.origin;
         const scrollToAnchor = function() {
             if (elementsNodeList_header) {
@@ -3680,9 +3675,8 @@
                 scrollToAnchor();
                 setupScrollToTop();
                 modules_animateAboutSection();
-                scrollToAnchor();
-                animateConnectSection();
-                animateConnectSectionBottom();
+                animateTextSection(".connect-section__info");
+                animateTextSection(".connect-section-bottom__info");
                 headerFixed();
                 initServiceSlider();
                 initCasesSlider();
