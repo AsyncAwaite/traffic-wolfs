@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="uk" xmlns="http://www.w3.org/1999/html">
+<html lang="uk" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 	<title>Traffic Wolves</title>
@@ -8,9 +8,9 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap&_v=20240130195200" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap&_v=20240130214058" rel="stylesheet" />
 
-	<link rel="stylesheet" href="css/style.min.css?_v=20240130195200" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240130214058" />
 	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png" />
 	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png" />
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png" />
@@ -32,7 +32,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap&_v=20240130195200" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap&_v=20240130214058" rel="stylesheet" />
 </head>
 
 <body class="body">
@@ -110,9 +110,9 @@
 			</div>
 		</header>
 
-		<main class="main-page">
+		<main class="main-page lazy" data-bg="../img/ellipse3.png">
 			<section class="main-section">
-				<div class="main-section__image" data-aos="zoom-in-right" data-aos-once="true"></div>
+				<div class="main-section__image lazy" data-aos="zoom-in-right" data-aos-once="true" data-bg-multi='url("../img/Icons\ 1.png") desktop, url("../img/telegram.png") mobile'></div>
 				<div class="container">
 					<div class="main-section__wrap">
 						<h1 class="homepage-header">
@@ -129,17 +129,17 @@
 						</div>
 					</div>
 					<ul class="main-section__list">
-						<li class="main-section__list-item" data-aos="flip-down" data-aos-delay="100" data-aos-once="true">
+						<li class="main-section__list-item lazy" data-aos="flip-down" data-aos-delay="100" data-aos-once="true" data-bg-multi='url("../img/main-section-background-mob.svg") mobile, url("../img/main-section-background.svg") desktop'>
 							<p class="mainlist-header">5+</p>
 							<p class="main-text">
 								років досвіду у сфері просування бізнесу в Телеграм
 							</p>
 						</li>
-						<li class="main-section__list-item" data-aos="flip-down" data-aos-delay="150" data-aos-once="true">
+						<li class="main-section__list-item lazy" data-aos="flip-down" data-aos-delay="150" data-aos-once="true" data-bg-multi='url("../img/main-section-background-mob.svg") mobile, url("../img/main-section-background.svg") desktop'>
 							<p class="mainlist-header">10+</p>
 							<p class="main-text">успішних актуальних проєктів</p>
 						</li>
-						<li class="main-section__list-item" data-aos="flip-down" data-aos-delay="200" data-aos-once="true">
+						<li class="main-section__list-item lazy" data-aos="flip-down" data-aos-delay="200" data-aos-once="true" data-bg-multi='url("../img/main-section-background-mob.svg") mobile, url("../img/main-section-background.svg") desktop'>
 							<p class="mainlist-header">$300 000+</p>
 							<p class="main-text">залучено в проєкт за останні 6 місяців</p>
 						</li>
@@ -147,9 +147,9 @@
 				</div>
 			</section>
 
-			<section class="about-section" id="about">
+			<section class="about-section lazy" id="about" data-bg-multi='url("../img/about-section-background-mob.svg") mobile, url("../img/ellipse3.png")'>
 				<div class="container">
-					<div class="about-section__wrap">
+					<div class="about-section__wrap lazy" data-bg-desktop="../img/about-section-background.svg">
 						<div class="about-section__info-wrap">
 							<h2 class="section-header">// Про нас</h2>
 							<h3 class="about-section__info change-color-on-scroll h2">
@@ -191,7 +191,7 @@
 				</div>
 			</section>
 
-			<section class="for-whom-section">
+			<section class="for-whom-section lazy" data-bg-multi='url("../img/ellipse1.png"), url("../img/ellipse2.png")'>
 				<div class="container">
 					<h2 class="section-header">// Для кого</h2>
 					<div class="for-whom-section__wrap">
@@ -199,7 +199,7 @@
 							Кому ми точно будемо корисні?
 						</h3>
 						<div class="list-wrap">
-							<div class="for-whom-section__image"></div>
+							<div class="for-whom-section__image lazy" data-bg="../img/for-whom-section-icon.svg"></div>
 							<ul class="for-whom-section__list">
 								<li class="for-whom-section__list-item" data-aos="zoom-out-right" data-aos-once="true">
 									<div class="for-whom-section__list-item-wrap">
@@ -215,7 +215,7 @@
 										та збільшити її активність
 									</p>
 								</li>
-								<li class="for-whom-section__list-item" data-aos="zoom-out-right" data-aos-delay="50" data-aos-once="true">
+								<li class="for-whom-section__list-item lazy" data-aos="zoom-out-right" data-aos-delay="50" data-aos-once="true" data-bg="../img/for-whom-section-background.svg">
 									<div class="for-whom-section__list-item-wrap">
 										<span>
 											<svg>
@@ -229,7 +229,7 @@
 										дорослої аудиторії та покращити імідж
 									</p>
 								</li>
-								<li class="for-whom-section__list-item" data-aos="zoom-out-right" data-aos-delay="100" data-aos-once="true">
+								<li class="for-whom-section__list-item lazy" data-aos="zoom-out-right" data-aos-delay="100" data-aos-once="true" data-bg="../img/for-whom-section-background.svg">
 									<div class="for-whom-section__list-item-wrap">
 										<span>
 											<svg>
@@ -243,7 +243,7 @@
 										побудувати з ними інтерактивну взаємодію
 									</p>
 								</li>
-								<li class="for-whom-section__list-item" data-aos="zoom-out-right" data-aos-delay="150" data-aos-once="true">
+								<li class="for-whom-section__list-item lazy" data-aos="zoom-out-right" data-aos-delay="150" data-aos-once="true" data-bg="../img/for-whom-section-background.svg">
 									<div class="for-whom-section__list-item-wrap">
 										<span>
 											<svg>
@@ -257,7 +257,7 @@
 										власну впізнаваність
 									</p>
 								</li>
-								<li class="for-whom-section__list-item" data-aos="zoom-out-right" data-aos-delay="200" data-aos-once="true">
+								<li class="for-whom-section__list-item lazy" data-aos="zoom-out-right" data-aos-delay="200" data-aos-once="true" data-bg="../img/for-whom-section-background.svg">
 									<div class="for-whom-section__list-item-wrap">
 										<span>
 											<svg>
@@ -277,7 +277,7 @@
 			</section>
 
 			<section class="connect-section">
-				<div class="connect-section__background-line"></div>
+				<div class="connect-section__background-line lazy" data-bg-multi='url("../img/connect-section-background-line-mob.svg") mobile, url("../img/connect-section-background-line.svg") desktop'></div>
 				<div class="container">
 					<div class="connect-section__info-wrap">
 						<h3 class="connect-section__info h2">
@@ -291,7 +291,7 @@
 				</div>
 			</section>
 
-			<section class="services-section" id="services">
+			<section class="services-section lazy" id="services" data-bg-multi='url("../img/services-section-background-mob.svg") mobile, url("../img/ellipse1.png"), url("../img/ellipse3.png"),  url("../img/services-section-background.svg") desktop'>
 				<div class="container">
 					<h2 class="section-header">// Наші послуги</h2>
 					<div class="services-section__wrap">
@@ -356,15 +356,15 @@
 				</div>
 			</section>
 
-			<section class="cases-section" id="cases">
-				<div class="cases-section__background-line"></div>
+			<section class="cases-section lazy" id="cases" data-bg="../img/ellipse1.png">
+				<div class="cases-section__background-line lazy" data-bg-multi='url("../img/cases-section-background-line-mob.svg") mobile, url("../img/cases-section-background-line.svg") desktop'></div>
 				<div class="container">
 					<h2 class="section-header">// Кейси</h2>
 					<h3 class="cases-section__info h2">Результати наших клієнтів</h3>
 					<div class="swiper" data-swiper="cases">
 						<div class="swiper-wrapper cases-section__list">
 							<div class="swiper-slide cases-section__list-item">
-								<div class="cases-section__list-content-wrap">
+								<div class="cases-section__list-content-wrap lazy" data-bg-multi='url("../img/cases-section-background-active-mob.svg") mobile, url("../img/cases-section-background.svg") desktop, url("../img/cases-section-background-active.svg")'>
 									<div class="inner-top-wrap">
 										<p class="top-text">Stop Russian Chanel</p>
 										<p>Найбільший телеграм канал новин в Україні</p>
@@ -390,7 +390,7 @@
 									</div>
 								</div>
 								<div class="card-icon">
-									<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.png" alt="Описание изображения" loading="lazy" /></picture>
+									<picture><source data-srcset="img/avatar.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  alt="Описание изображения" class="lazy" data-src="img/avatar.png" /></picture>
 								</div>
 							</div>
 							<div class="cases-section__list-item swiper-slide active">
@@ -420,7 +420,7 @@
 									</div>
 								</div>
 								<div class="card-icon">
-									<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.png" alt="Описание изображения" loading="lazy" /></picture>
+									<picture><source data-srcset="img/avatar.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  alt="Описание изображения" class="lazy" data-src="img/avatar.png" /></picture>
 								</div>
 							</div>
 							<div class="cases-section__list-item swiper-slide">
@@ -450,7 +450,7 @@
 									</div>
 								</div>
 								<div class="card-icon">
-									<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.png" alt="Описание изображения" loading="lazy" /></picture>
+									<picture><source data-srcset="img/avatar.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  alt="Описание изображения" class="lazy" data-src="img/avatar.png" /></picture>
 								</div>
 							</div>
 							<div class="swiper-slide cases-section__list-item">
@@ -480,7 +480,7 @@
 									</div>
 								</div>
 								<div class="card-icon">
-									<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.png" alt="Описание изображения" loading="lazy" /></picture>
+									<picture><source data-srcset="img/avatar.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  alt="Описание изображения" class="lazy" data-src="img/avatar.png" /></picture>
 								</div>
 							</div>
 							<div class="swiper-slide cases-section__list-item">
@@ -510,7 +510,7 @@
 									</div>
 								</div>
 								<div class="card-icon">
-									<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.png" alt="Описание изображения" loading="lazy" /></picture>
+									<picture><source data-srcset="img/avatar.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  alt="Описание изображения" class="lazy" data-src="img/avatar.png" /></picture>
 								</div>
 							</div>
 						</div>
@@ -530,8 +530,8 @@
 				</div>
 			</section>
 
-			<section class="why-us-section" id="why-us">
-				<div class="why-us-section__image" data-aos="custom-swing" data-aos-duration="1000"></div>
+			<section class="why-us-section lazy" id="why-us" data-bg-multi='url("../img/ellipse1.png"), url("../img/ellipse2.png")'>
+				<div class="why-us-section__image lazy" data-aos="custom-swing" data-aos-duration="1000" data-bg-multi='url("../img/why-us-list-image.png") mobile, url("../img/icons\ 2.png") desktop'></div>
 				<div class="container">
 					<h2 class="section-header">// Чому ми</h2>
 					<div class="why-us-section__wrap">
@@ -591,10 +591,10 @@
 							</li>
 						</ul>
 						<div class="why-us-section__picture-wrap">
-							<picture><source srcset="img/telegram-screen-desc.webp" type="image/webp"><img src="img/telegram-screen-desc.png" alt="Описание изображения" loading="lazy" /></picture>
+							<picture><source data-srcset="img/telegram-screen-desc.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/telegram-screen-desc.png" alt="Описание изображения" /></picture>
 							<div class="why-us-section__channel-wrap" data-aos="flip-up" data-aos-once="true">
 								<div class="why-us-section__channel-icon">
-									<picture><source srcset="img/news-online.webp" type="image/webp"><img class="icon-image" src="img/news-online.png" alt="Описание изображения" loading="lazy" /></picture>
+									<picture><source data-srcset="img/news-online.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="icon-image lazy" data-src="img/news-online.png" alt="Описание изображения" loading="lazy" /></picture>
 								</div>
 								<div>
 									<span class="why-us-section__channel-text-top">270 К +</span>
@@ -603,7 +603,7 @@
 							</div>
 							<div class="why-us-section__channel-wrap second" data-aos="flip-down" data-aos-once="true">
 								<div class="why-us-section__channel-icon">
-									<picture><source srcset="img/tg-avatar.webp" type="image/webp"><img class="icon-image" src="img/tg-avatar.png" alt="Описание изображения" loading="lazy" /></picture>
+									<picture><source data-srcset="img/tg-avatar.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="icon-image lazy" data-src="img/tg-avatar.png" alt="Описание изображения" loading="lazy" /></picture>
 								</div>
 								<div>
 									<span class="why-us-section__channel-text-top">350 К +</span>
@@ -615,10 +615,10 @@
 				</div>
 			</section>
 
-			<section class="connect-section-bottom">
-				<div class="connect-section-bottom__background-line"></div>
+			<section class="connect-section-bottom lazy" data-bg-multi='url("../img/connect-section-background-mob.png") mobile, url("../img/ellipse1.png"), url("../img/ellipse2.png")'>
+				<div class="connect-section-bottom__background-line lazy" data-bg-multi='url("../img/connect-section-bottom-background-line-mob.svg") mobile, url("../img/connect-section-bottom-background-line.svg") desktop'></div>
 				<div class="container">
-					<div class="connect-section-bottom__wrap">
+					<div class="connect-section-bottom__wrap lazy" data-bg-desktop=""="../img/connect-section-background.png">
 						<div class="inner-wrap">
 							<h3 class="connect-section-bottom__info h2">
 								<span class="lines">// Хочете успішно залучати аудиторію та заробляти у
@@ -630,7 +630,7 @@
 				</div>
 			</section>
 
-			<section class="team-section">
+			<section class="team-section lazy" data-bg-multi='url("../img/ellipse1.png"), url("../img/ellipse2.png") desktop'>
 				<div class="container">
 					<h2 class="section-header">// Команда</h2>
 					<h3 class="team-section__info h2">Наші спеціалісти</h3>
@@ -648,7 +648,7 @@
 								</p>
 							</div>
 							<div class="card-icon">
-								<picture><source srcset="img/avatar-team.webp" type="image/webp"><img src="img/avatar-team.png" alt="Описание изображения" loading="lazy" /></picture>
+								<picture><source data-srcset="img/avatar-team.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/avatar-team.png" alt="Описание изображения" /></picture>
 							</div>
 						</li>
 						<li class="team-section__list-item">
@@ -664,7 +664,7 @@
 								</p>
 							</div>
 							<div class="card-icon">
-								<picture><source srcset="img/avatar-team.webp" type="image/webp"><img src="img/avatar-team.png" alt="Описание изображения" loading="lazy" /></picture>
+								<picture><source data-srcset="img/avatar-team.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/avatar-team.png" alt="Описание изображения" /></picture>
 							</div>
 						</li>
 						<li class="team-section__list-item">
@@ -680,7 +680,7 @@
 								</p>
 							</div>
 							<div class="card-icon">
-								<picture><source srcset="img/avatar-team.webp" type="image/webp"><img src="img/avatar-team.png" alt="Описание изображения" loading="lazy" /></picture>
+								<picture><source data-srcset="img/avatar-team.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/avatar-team.png" alt="Описание изображения" /></picture>
 							</div>
 						</li>
 						<li class="team-section__list-item">
@@ -696,7 +696,7 @@
 								</p>
 							</div>
 							<div class="card-icon">
-								<picture><source srcset="img/avatar-team.webp" type="image/webp"><img src="img/avatar-team.png" alt="Описание изображения" loading="lazy" /></picture>
+								<picture><source data-srcset="img/avatar-team.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/avatar-team.png" alt="Описание изображения" /></picture>
 							</div>
 						</li>
 						<li class="team-section__list-item">
@@ -712,7 +712,7 @@
 								</p>
 							</div>
 							<div class="card-icon">
-								<picture><source srcset="img/avatar-team.webp" type="image/webp"><img src="img/avatar-team.png" alt="Описание изображения" loading="lazy" /></picture>
+								<picture><source data-srcset="img/avatar-team.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/avatar-team.png" alt="Описание изображения" /></picture>
 							</div>
 						</li>
 						<li class="team-section__list-item">
@@ -728,7 +728,7 @@
 								</p>
 							</div>
 							<div class="card-icon">
-								<picture><source srcset="img/avatar-team.webp" type="image/webp"><img src="img/avatar-team.png" alt="Описание изображения" loading="lazy" /></picture>
+								<picture><source data-srcset="img/avatar-team.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/avatar-team.png" alt="Описание изображения" /></picture>
 							</div>
 						</li>
 					</ul>
@@ -774,7 +774,7 @@
 								<div class="telegram-section__list-wrap-top">
 									<div class="list-item-centered__container">
 										<div class="list-item-centered__scale">
-											<img src="img/telegram-list-item-scale.svg" alt="Описание изображения" loading="lazy" />
+											<img class="lazy" data-src="img/telegram-list-item-scale.svg" alt="Описание изображения" />
 										</div>
 										<div class="diagram-container-second">
 											<svg>
@@ -873,7 +873,7 @@
 								<div class="telegram-section__list-wrap-top">
 									<div class="list-item-centered__container">
 										<div class="list-item-centered__scale">
-											<img src="img/telegram-list-item-scale-second.svg" alt="Описание изображения" loading="lazy" />
+											<img class="lazy" data-src="img/telegram-list-item-scale-second.svg" alt="Описание изображения" />
 										</div>
 										<div class="diagram-container-second">
 											<svg>
@@ -1269,8 +1269,8 @@
 			</g>
 		</symbol>
 	</svg>
-	<!--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20240130195200"></script>-->
-	<script src="js/app.min.js?_v=20240130195200"></script>
+	<!--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20240130214058"></script>-->
+	<script src="js/app.min.js?_v=20240130214058"></script>
 
 
 </body>
