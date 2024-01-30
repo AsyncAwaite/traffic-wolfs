@@ -1,3 +1,5 @@
+import {getElement} from "../core/index.js";
+
 const animateSpan = async (span) => {
   const words = span.textContent.split(" ");
 
@@ -41,6 +43,14 @@ export const animateConnectSection = async () => {
   const infoElement = document.querySelector(".connect-section__info");
   const spans = infoElement.querySelectorAll("span");
 
+  for (const span of spans) {
+    await animateSpan(span);
+  }
+};
+
+export const animateTextSection = async (selector) => {
+  const infoElement = getElement(selector)
+  const spans = infoElement.querySelectorAll("span");
   for (const span of spans) {
     await animateSpan(span);
   }

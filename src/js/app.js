@@ -4,7 +4,11 @@ import "aos/dist/aos.css";
 
 import burger from "./modules/burger.js";
 import animateAboutSection from "./modules/animateAboutSection.js";
-import {animateConnectSection, animateConnectSectionBottom} from "./modules/animateConnectSection.js";
+import {
+  animateConnectSection,
+  animateConnectSectionBottom,
+  animateTextSection
+} from "./modules/animateConnectSection.js";
 import { setupScrollToTop } from "./modules/scrollToTop.js";
 import { initLoadMore } from "./modules/loadMore.js";
 
@@ -55,14 +59,14 @@ window.addEventListener("load", () => {
     scrollToAnchor();
     setupScrollToTop();
     animateAboutSection();
-    scrollToAnchor();
-    animateConnectSection();
-    animateConnectSectionBottom();
+    animateTextSection('.connect-section__info');
+    animateTextSection('.connect-section-bottom__info');
+    // animateConnectSection();
+    // animateConnectSectionBottom();
     headerFixed();
     initServiceSlider();
     initCasesSlider();
     initTelegramSlider();
-
     burger();
     initLoadMore();
   } catch (e) {
