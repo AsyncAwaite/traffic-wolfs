@@ -61,8 +61,6 @@ window.addEventListener("load", () => {
     animateAboutSection();
     animateTextSection('.connect-section__info');
     animateTextSection('.connect-section-bottom__info');
-    // animateConnectSection();
-    // animateConnectSectionBottom();
     headerFixed();
     initServiceSlider();
     initCasesSlider();
