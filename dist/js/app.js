@@ -4036,6 +4036,9 @@
             }));
         }
         window["FLS"] = true;
+        const lazyLoadInstance = new lazyload_min({
+            elements_selector: ".lazy"
+        });
         isWebp();
         addTouchClass();
         fullVHfix();
@@ -4076,8 +4079,5 @@
                 }));
             }
         }
-        const lazyLoadInstance = new lazyload_min({
-            elements_selector: ".lazy"
-        });
     })();
 })();

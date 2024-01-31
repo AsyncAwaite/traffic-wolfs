@@ -4,7 +4,7 @@
   <body class="body">
     <div class="page-container">
       @@include('html/_header.htm',{})
-      <main class="main-page lazy" data-bg="../../img/ellipse3.png">
+      <main class="main-page">
         <section class="main-section">
           <div
             class="main-section__image lazy"
@@ -67,7 +67,7 @@
         <section
           class="about-section lazy"
           id="about"
-          data-bg-multi='url("../../img/about-section-background-mob.svg") mobile, url("../../img/ellipse3.png")'
+          data-bg-mob="../../img/about-section-background-mob.svg"
         >
           <div class="container">
             <div
@@ -130,10 +130,7 @@
           </div>
         </section>
 
-        <section
-          class="for-whom-section lazy"
-          data-bg-multi='url("../../img/ellipse1.png"), url("../../img/ellipse2.png")'
-        >
+        <section class="for-whom-section">
           <div class="container">
             <h2 class="section-header">// Для кого</h2>
             <div class="for-whom-section__wrap">
@@ -273,7 +270,7 @@
         <section
           class="services-section lazy"
           id="services"
-          data-bg-multi='url("../../img/services-section-background-mob.svg") mobile, url("../../img/ellipse1.png"), url("../../img/ellipse3.png"),  url("../../img/services-section-background.svg") desktop'
+          data-bg-multi='url("../../img/services-section-background-mob.svg") mobile, url("../../img/services-section-background.svg") desktop'
         >
           <div class="container">
             <h2 class="section-header">// Наші послуги</h2>
@@ -339,11 +336,7 @@
           </div>
         </section>
 
-        <section
-          class="cases-section lazy"
-          id="cases"
-          data-bg="../../img/ellipse1.png"
-        >
+        <section class="cases-section" id="cases">
           <div
             class="cases-section__background-line lazy"
             data-bg-multi='url("../../img/cases-section-background-line-mob.svg") mobile, url("../../img/cases-section-background-line.svg") desktop'
@@ -543,11 +536,7 @@
           </div>
         </section>
 
-        <section
-          class="why-us-section lazy"
-          id="why-us"
-          data-bg-multi='url("../../img/ellipse1.png"), url("../../img/ellipse2.png")'
-        >
+        <section class="why-us-section" id="why-us">
           <div
             class="why-us-section__image lazy"
             data-aos="custom-swing"
@@ -688,7 +677,7 @@
 
         <section
           class="connect-section-bottom lazy"
-          data-bg-multi='url("../../img/connect-section-background-mob.png") mobile, url("../../img/ellipse1.png"), url("../../img/ellipse2.png")'
+          data-bg-mob="../../img/connect-section-background-mob.png"
         >
           <div
             class="connect-section-bottom__background-line lazy"
@@ -715,10 +704,7 @@
           </div>
         </section>
 
-        <section
-          class="team-section lazy"
-          data-bg-multi='url("../../img/ellipse1.png"), url("../../img/ellipse2.png") desktop'
-        >
+        <section class="team-section">
           <div class="container">
             <h2 class="section-header">// Команда</h2>
             <h3 class="team-section__info h2">Наші спеціалісти</h3>

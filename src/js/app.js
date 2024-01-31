@@ -38,6 +38,10 @@ import {
   initTelegramSlider,
 } from "./modules/sliders.js";
 
+const lazyLoadInstance = new LazyLoad({
+  elements_selector: ".lazy",
+});
+
 /* Перевірка підтримки webp, додавання класу webp або no-webp для HTML */
 /* (i) необхідно для коректного відображення webp із css */
 flsFunctions.isWebp();
@@ -110,6 +114,4 @@ function headerFixed() {
 }
 
 
-const lazyLoadInstance = new LazyLoad({
-  elements_selector: ".lazy",
-});
+
