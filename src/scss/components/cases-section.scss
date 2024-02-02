@@ -25,7 +25,7 @@
   }
   .active {
     .cases-section__list-content-wrap {
-      background-image: url("../../img/cases-section-background-active-mob.svg");
+      background-image: url("../../img/cases-section-background-active-mob.png");
     }
   }
   .cases-section__list-item.active .card-icon img {
@@ -63,7 +63,7 @@
     position: relative;
   }
   &__list-content-wrap {
-    background-image: url("../../img/cases-section-background.svg");
+    background-image: url("../../img/cases-section-background.png");
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: auto;
@@ -135,7 +135,7 @@
     padding-top: gem(130.5);
     .active {
       .cases-section__list-content-wrap {
-        background-image: url("../../img/cases-section-background-active.svg");
+        background-image: url("../../img/cases-section-background-active.png");
       }
     }
     &__list {
@@ -154,7 +154,7 @@
     }
     &__list-content-wrap {
       width: gem(335);
-      background-image: url("../../img/cases-section-background.svg");
+      background-image: url("../../img/cases-section-background.png");
       filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
       .inner-top-wrap {
         width: gem(241);

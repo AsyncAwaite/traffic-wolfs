@@ -4,7 +4,7 @@
   height: gem(788.5);
   padding-top: gem(50);
   padding-bottom: gem(100);
-  background-image: url("../../img/services-section-background-mob.svg");
+  background-image: url("../../img/services-section-background-mob.png");
   background-size: cover;
   background-repeat: no-repeat;
   &::before {
@@ -89,7 +89,7 @@
     }
     padding-top: gem(81);
     height: gem(653);
-    background-image: url("../../img/services-section-background.svg");
+    background-image: url("../../img/services-section-background.png");
     &__wrap {
       display: flex;
       justify-content: start;
