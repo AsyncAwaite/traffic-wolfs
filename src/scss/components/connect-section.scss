@@ -24,7 +24,7 @@
     z-index: 2;
     width: gem(375);
     height: gem(64);
-    background-image: url("../../img/connect-section-background-line-mob.svg");
+    background-image: url("@img/connect-section-background-line-mob.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
@@ -47,7 +47,7 @@
     &__background-line {
       width: gem(1440);
       height: gem(66);
-      background-image: url("../../img/connect-section-background-line.svg");
+      background-image: url("@img/connect-section-background-line.svg");
     }
   }
 }

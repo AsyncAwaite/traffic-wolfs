@@ -9,7 +9,7 @@
     left: gem(50);
     width: gem(600);
     height: gem(600);
-    background-image: url("../../img/ellipse1.png");
+    background-image: url("@img/ellipse1.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
@@ -26,7 +26,7 @@
     width: gem(600);
     height: gem(600);
     z-index: -1;
-    background-image: url("../../img/ellipse2.png");
+    background-image: url("@img/ellipse2.png");
     background-size: contain;
     background-repeat: no-repeat;
     @media screen and (min-width: 577px) {
@@ -41,7 +41,7 @@
     top: gem(300);
     width: gem(120);
     height: gem(120);
-    background-image: url("../../img/for-whom-section-icon.svg");
+    background-image: url("@img/for-whom-section-icon.svg");
     background-size: 140%;
     background-position: right center;
     background-repeat: no-repeat;
@@ -67,7 +67,7 @@
     padding-top: gem(24);
 
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.15);
-    background-image: url("../../img/for-whom-section-background.png");
+    background-image: url("@img/for-whom-section-background.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 

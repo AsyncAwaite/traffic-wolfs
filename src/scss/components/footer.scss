@@ -94,7 +94,7 @@
     z-index: 2;
     width: gem(343);
     height: gem(66);
-    background-image: url("../../img/footer-section-line-mob.svg");
+    background-image: url("@img/footer-section-line-mob.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
@@ -175,7 +175,7 @@
       top: gem(310);
       left: 0;
       width: gem(1440);
-      background-image: url("../../img/footer-section-line.svg");
+      background-image: url("@img/footer-section-line.svg");
     }
     .return-btn {
       bottom: gem(100);
