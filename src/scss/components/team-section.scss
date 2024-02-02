@@ -8,7 +8,7 @@
     left: gem(-70);
     width: gem(600);
     height: gem(600);
-    background-image: url("../../img/ellipse1.png");
+    background-image: url("@img/ellipse1.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
@@ -27,7 +27,7 @@
     width: gem(600);
     height: gem(600);
     z-index: -1;
-    background-image: url("../../img/ellipse2.png");
+    background-image: url("@img/ellipse2.png");
     background-size: contain;
     background-repeat: no-repeat;
     @media screen and (min-width: 577px) {

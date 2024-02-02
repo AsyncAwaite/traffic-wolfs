@@ -8,7 +8,7 @@
     left: gem(80);
     width: gem(420);
     height: gem(400);
-    background-image: url("../../img/ellipse3.png");
+    background-image: url("@img/ellipse3.png");
     background-size: contain;
     z-index: -1;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@
     right: gem(10);
     width: gem(150);
     height: gem(150);
-    background-image: url("../../img/telegram.png");
+    background-image: url("@img/telegram.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
@@ -51,7 +51,7 @@
     height: gem(139);
     padding: gem(16) gem(34);
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.15);
-    background-image: url("../../img/main-section-background-mob.png");
+    background-image: url("@img/main-section-background-mob.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
@@ -87,7 +87,7 @@
       right: gem(50);
       width: gem(300);
       height: gem(300);
-      background-image: url("../../img/Icons\ 1.png");
+      background-image: url("@img/Icons\ 1.png");
       background-size: 100% 100%;
       background-repeat: no-repeat;
       filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
@@ -135,7 +135,7 @@
       padding: gem(25);
       width: gem(256);
       height: gem(175);
-      background-image: url("../../img/main-section-background.png");
+      background-image: url("@img/main-section-background.png");
     }
   }
 }
