@@ -4,7 +4,7 @@
   height: gem(788.5);
   padding-top: gem(50);
   padding-bottom: gem(100);
-  background-image: url("../../img/services-section-background-mob.png");
+  background-image: url("@img/services-section-background-mob.png");
   background-size: cover;
   background-repeat: no-repeat;
   &::before {
@@ -14,7 +14,7 @@
     left: gem(-70);
     width: gem(600);
     height: gem(600);
-    background-image: url("../../img/ellipse1.png");
+    background-image: url("@img/ellipse1.png");
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -31,7 +31,7 @@
     width: gem(600);
     height: gem(600);
 
-    background-image: url("../../img/ellipse3.png");
+    background-image: url("@img/ellipse3.png");
     background-size: contain;
     background-repeat: no-repeat;
     @media screen and (min-width: 577px) {
@@ -89,7 +89,7 @@
     }
     padding-top: gem(81);
     height: gem(653);
-    background-image: url("../../img/services-section-background.png");
+    background-image: url("@img/services-section-background.png");
     &__wrap {
       display: flex;
       justify-content: start;

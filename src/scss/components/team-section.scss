@@ -8,7 +8,7 @@
     left: gem(-70);
     width: gem(600);
     height: gem(600);
-    background-image: url("../../img/ellipse1.png");
+    background-image: url("@img/ellipse1.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
@@ -27,7 +27,7 @@
     width: gem(600);
     height: gem(600);
     z-index: -1;
-    background-image: url("../../img/ellipse2.png");
+    background-image: url("@img/ellipse2.png");
     background-size: contain;
     background-repeat: no-repeat;
     @media screen and (min-width: 577px) {
@@ -52,7 +52,7 @@
     position: relative;
     background-color: var(--accent);
     width: gem(340);
-    height: gem(143);
+    height: gem(220);
     padding: gem(24) gem(16);
     border-radius: 15px;
     &__line {
@@ -95,13 +95,14 @@
 @media screen and (min-width: 577px) {
   .team-section {
     &__list {
+      justify-content: end;
       flex-direction: row;
       flex-wrap: wrap;
       gap: gem(20);
     }
     &__list-item {
       width: gem(400);
-      height: gem(160);
+      height: gem(219);
       padding: gem(30) gem(24);
       &__line {
         width: gem(400);

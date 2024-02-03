@@ -10,7 +10,7 @@
     left: gem(-250);
     width: gem(800);
     height: gem(800);
-    background-image: url("../../img/ellipse1.png");
+    background-image: url("@img/ellipse1.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
@@ -25,11 +25,11 @@
   }
   .active {
     .cases-section__list-content-wrap {
-      background-image: url("../../img/cases-section-background-active-mob.png");
+      background-image: url("@img/cases-section-background-active-mob.png");
     }
   }
   .cases-section__list-item.active .card-icon img {
-    content: url("../img/avatar-active.png");
+    content: url("@img/avatar-active.png");
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -42,7 +42,7 @@
     z-index: 2;
     width: gem(382.5);
     height: gem(57);
-    background-image: url("../../img/cases-section-background-line-mob.svg");
+    background-image: url("@img/cases-section-background-line-mob.svg");
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -63,7 +63,7 @@
     position: relative;
   }
   &__list-content-wrap {
-    background-image: url("../../img/cases-section-background.png");
+    background-image: url("@img/cases-section-background.png");
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: auto;
@@ -135,7 +135,7 @@
     padding-top: gem(130.5);
     .active {
       .cases-section__list-content-wrap {
-        background-image: url("../../img/cases-section-background-active.png");
+        background-image: url("@img/cases-section-background-active.png");
       }
     }
     &__list {
@@ -144,7 +144,7 @@
     &__background-line {
       width: gem(1627.5);
       height: gem(57);
-      background-image: url("../../img/cases-section-background-line.svg");
+      background-image: url("@img/cases-section-background-line.svg");
       background-size: contain;
       background-repeat: no-repeat;
     }
@@ -154,7 +154,7 @@
     }
     &__list-content-wrap {
       width: gem(335);
-      background-image: url("../../img/cases-section-background.png");
+      background-image: url("@img/cases-section-background.png");
       filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
       .inner-top-wrap {
         width: gem(241);
