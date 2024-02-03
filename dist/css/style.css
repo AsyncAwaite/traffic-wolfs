@@ -3881,7 +3881,7 @@ h5,
   position: relative;
   background-color: var(--accent);
   width: 3.4rem;
-  height: 1.43rem;
+  height: 2.2rem;
   padding: 0.24rem 0.16rem;
   border-radius: 15px;
 }
@@ -5557,6 +5557,9 @@ h1 h2 h3 h4 h5 h6 {
   }
 
   .team-section__list {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -5568,7 +5571,7 @@ h1 h2 h3 h4 h5 h6 {
 
   .team-section__list-item {
     width: 4rem;
-    height: 1.6rem;
+    height: 2.19rem;
     padding: 0.3rem 0.24rem;
   }
 
