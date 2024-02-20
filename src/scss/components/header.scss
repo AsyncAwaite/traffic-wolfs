@@ -42,7 +42,7 @@
   &__menu {
     opacity: 0;
     z-index: 1;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: gem(20) 0px 0px gem(20);
     width: gem(365);
     height: gem(661);
     background-color: var(--accent);
@@ -102,7 +102,7 @@
 
   &__item {
     position: relative;
-    border-radius: 30px;
+    border-radius: gem(30);
     border: gem(1) solid transparent;
     transition:
       border 0.3s ease,

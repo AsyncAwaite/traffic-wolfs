@@ -23,7 +23,7 @@
     background-image: url("@img/telegram.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px gem(20) gem(20) rgba(0, 0, 0, 0.25));
   }
 
   &__text {
@@ -50,7 +50,7 @@
   &__list-item {
     height: gem(139);
     padding: gem(16) gem(34);
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px gem(20) gem(20) 0px rgba(0, 0, 0, 0.15);
     background-image: url("@img/main-section-background-mob.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@
       background-image: url("@img/Icons\ 1.png");
       background-size: 100% 100%;
       background-repeat: no-repeat;
-      filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
+      filter: drop-shadow(0px gem(20) gem(20) rgba(0, 0, 0, 0.25));
     }
     &__image-second {
       display: none;

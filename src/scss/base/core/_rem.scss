@@ -58,5 +58,5 @@
   @include remBase(375, 0);
 }
 
-@include remBreakpoint(1900, 0, 'min-width'); // hd
-@include remBreakpoint(2560, 1200, 'min-width'); // 4k displays
+// @include remBreakpoint(1900, 0, 'min-width'); // hd
+// @include remBreakpoint(2560, 1200, 'min-width'); // 4k displays

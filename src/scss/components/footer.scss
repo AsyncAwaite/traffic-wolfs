@@ -46,7 +46,7 @@
   &__list-item {
     width: fit-content;
     position: relative;
-    border-radius: 30px;
+    border-radius: gem(30);
     border: gem(1) solid transparent;
     transition:
       border 0.3s ease,
@@ -56,10 +56,10 @@
       border: 1px solid #fff;
       box-shadow:
         0 0 gem(5) rgba(60, 138, 255, 0.7),
-        0 0 15px rgba(60, 138, 255, 0.7),
-        0 0 20px rgba(60, 138, 255, 0.7),
-        0 0 25px rgba(60, 138, 255, 0.7),
-        0 0 35px rgba(60, 138, 255, 0.7);
+        0 0 gem(15) rgba(60, 138, 255, 0.7),
+        0 0 gem(20) rgba(60, 138, 255, 0.7),
+        0 0 gem(25) rgba(60, 138, 255, 0.7),
+        0 0 gem(35) rgba(60, 138, 255, 0.7);
     }
 
     a {
